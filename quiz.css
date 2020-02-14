@@ -1,5 +1,31 @@
-h1 {
-text-align: center;
-padding-top: 60px;
-text
+ .highScore {
+   
+   border:1px solid green;
+
+ }
+
+ .timer {
+   float: right;
+   border:1px solid green;
+ }
+ 
+ 
+
+#h1 {
+   margin-top: 20px;
+  
+} 
+
+.buttonn {
+   color: darkgreen;
+}
+
+.paragraph {
+  
+}
+
+.container {
+  text-align: center;
+  padding:125px;
+  line-height: 50px;
 }
