@@ -5,10 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="quiz.css">
 </head>
 
 <body>
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <div class="col highScore">High Score</div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col timer">60</div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <h1>Code Quiz!</h1>
+
+    <p>
+      Welcome to the Code Quiz! Try to answer 5 questions before the timer runs out. An incorrect answer will result
+      in a ten second penalty. Good luck!
+    </p>
+    <p><button id="button">Click to Start</button></p>
+
+  </div>
+
 
   <div id="Container"></div>
   <div id="start">Start Quiz</div>
