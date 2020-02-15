@@ -28,7 +28,7 @@ button.addEventListener("click", function (event) {
 });
 //quiz in a container
 //questions
-
+console.log
 
 var lastQuestion = questions.length - 1;
 let runningQuestion = 0;
