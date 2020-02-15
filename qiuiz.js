@@ -15,61 +15,20 @@ var hiScore = document.getElementById("hiScore");
 
 // container for start quiz
 // begin with a start button
+var button = document.getElementById("button");
+var quiz = documenet.getElemementById("quiz");
+var timer = 60;
+var myInterval;
 
+button.addEventListener("click", function (event) {
+  myInterval = setInterval(function () {
+    time--;
+    title.innerHTML = time;
+  }, 1000);
+});
 //quiz in a container
 //questions
-let questions = [
-  // five questions
-  //choices
-  {
-    question: "What does HTML stand for?"
-      choiceA: "Hyperactive Test Mode Length"
-      choiceB: "anser"
-      choiceC: "answer"
-      correct: "A"
 
-  }
-  {
-    question: "Is HTML a programming language?"
-      choiceA: "Hyperactive Test Mode Length"
-      choiceB: "anser"
-      choiceC: "answer"
-      correct: "A"
-
-  }
-
-  {
-    question: "What do you use to make a plain webpage look pretty?"
-      choiceA: "Hyperactive Test Mode Length"
-      choiceB: "anser"
-      choiceC: "answer"
-      correct: "A"
-
-  }
-  {
-    question: "What does HTML stand for?"
-      choiceA: "Hyperactive Test Mode Length"
-      choiceB: "anser"
-      choiceC: "answer"
-      correct: "A"
-
-  }
-
-  {
-    question: "What does HTML stand for?"
-      choiceA: "Hyperactive Test Mode Length"
-      choiceB: "anser"
-      choiceC: "answer"
-      correct: "A"
-
-  }
-
-
-
-
-
-
-]
 
 var lastQuestion = questions.length - 1;
 let runningQuestion = 0;
@@ -89,17 +48,14 @@ renderQuestion();
 quiz.style.display = "block";
 
 //render progress
-function renderProgress()
+
 
 //incorrect answer = time penalty
 //timer
 // constant countdown
 
-var count = 60
-timer = setInterval(function () {
-  $('#counter').html(count--);
-  if (count == 1) clearInterval(timer);
-}, 1000);
+
+
     // ten second penalty with incorrect answers
 
 //score container
